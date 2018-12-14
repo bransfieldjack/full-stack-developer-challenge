@@ -25,7 +25,7 @@ SECRET_KEY = '^9%j^kybjolf@xo!!_$b-4qvuh-2bezpntz^5*vq4tkpzujp65'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['info-exchange-app-jackalack117.c9users.io']
 
 
 # Application definition
