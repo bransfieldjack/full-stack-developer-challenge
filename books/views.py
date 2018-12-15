@@ -4,9 +4,9 @@ from .models import Books
 from .serializers import BooksSerializer
 
 
-class BooksView(viewsets.ModelViewSet): #Inheriting the modelviewset will take care of PUT/GET functionality, no need to explicitly define. 
-    queryset = 
-    serializer_class = 
+class BooksView(viewsets.ModelViewSet): # Inheriting the modelviewset will take care of PUT/GET functionality, no need to explicitly define. 
+    queryset = Books.objects.all() # Returns all info from the database, then the modelviewset will decide how to use the objects in a particular way. 
+    serializer_class = BooksSerializer # The serilizer created for the Books app
     
     
     
