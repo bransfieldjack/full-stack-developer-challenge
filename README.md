@@ -30,7 +30,7 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 ## Technologies Used
 
-- [Django 1.11](https://docs.djangoproject.com/en/2.1/releases/1.11/)
+- [Django 2.0](https://docs.djangoproject.com/en/2.1/releases/2.0/)
 
 - [Django REST Framework](https://www.django-rest-framework.org/)
 
