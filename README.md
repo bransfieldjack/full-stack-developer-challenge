@@ -46,6 +46,9 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 - [Azure DevOps](https://azure.microsoft.com/en-au/services/devops/)
 
+- [Node v6.11.2](https://nodejs.org/en/blog/release/v6.11.2/)
+
+- [NPM v3.10.10](https://www.npmjs.com/package/npm/v/3.10.10)
 
 
 ## Testing
