@@ -77,7 +77,20 @@ class TestViews(TestCase):
         page = self.client.get("/")
         self.assertEqual(page.status_code, 200)
 ```
+### Model test:
+```
+from django.test import TestCase
+from .models import Author
 
+class TestModels(TestCase):
+    
+    
+    def test_done_defaults_to_false(self):
+        item = Author(id=1)
+        item.save()
+        self.assertEqual(Author.id, 1)
+        self.assertEqual(Author.done, False)
+```
 ![Azure Pipelines build successful](https://s3-ap-southeast-2.amazonaws.com/info-exchange-test/azure_pipelines_build_succeed.PNG)
 ![Travis build successful](https://s3-ap-southeast-2.amazonaws.com/info-exchange-test/travis_build_succeed.PNG)
 
