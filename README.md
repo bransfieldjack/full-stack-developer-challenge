@@ -96,6 +96,17 @@ class TestModels(TestCase):
 
 ## Deployment
 
+This app has been deployed to one of Herokus free dyno's.
+Heroku is a cloud application hosting platform, which automates a much of the environment configuration from the command line. 
 
+To push your code to heroku:
 
+- heroku login 
+- heroku git:remote -a info-exchange-app
+- git commit
+- git push heroku master
 
+App configuration:
+
+- heroku config:set DISABLE_COLLECTSTATIC=1 (This turns off the collection for any static files. )
+- echo web: gunicorn info-exchange-app.wsgi:application > Procfile (The procfile is the entry point for our app. We tell heroku that this will be a web app using the gunicorn server. )
