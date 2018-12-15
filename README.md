@@ -45,7 +45,7 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 ## Testing
 
 CI/CD builds verified using Travis, .travis.yml file for integration with Travis and github. 
-CI/CD builds configured with Azure DevOps, 
+CI/CD builds configured with Azure DevOps, all builds passing.
 
 Postman was used for API functionality testing, along with the built in Django Api Root dashboard. 
 
