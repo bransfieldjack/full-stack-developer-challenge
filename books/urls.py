@@ -2,10 +2,12 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 
+
 router = routers.DefaultRouter() # Default router to route our views. 
 router.register('books', views.BooksView) # Registers our view/endpoint. 
 router.register('author', views.AuthorView)
 
+
 urlpatterns = [
-    path('', include(router.urls)) # Generates the urls and calls them using the router. 
+    path('', include(router.urls)), # Generates the urls and calls them using the router. 
 ]
