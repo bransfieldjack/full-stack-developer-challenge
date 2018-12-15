@@ -1,18 +1,54 @@
+# full-stack-developer-challenge
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This is a small web application to manage a list of Books, required as per the Inforexchange technical examination. 
+Each book has a name, ISBN, and an author. The test consists of two parts, a RESTful API as the backend and the Javascript based frontend application
+ 
+## UX
+ 
+
+## Features
+
+In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+ 
+ - Books app
+ 
+### Existing Features
+
+- GET /books/ - Returns a list of books in the database in JSON format
+- GET /book/{{id}}/ - Returns a detail view of the specified book id. Nest author details in JSON format
+- GET /authors/ - Returns a list of authors in the database in JSON format
+- GET /author/{{id}}/ - Returns a detail view of the specified author id
+- POST /author/ - Creates a new author with the specified details - Expects a JSON body
+- POST /book/ - Creates a new book with the specified details - Expects a JSON body
+- PUT /author/{{id}} - Updates an existing author - Expects a JSON body
+- PUT /book/{{id}} - Updates an existing book - Expects a JSON body
+
+### Features Left to Implement
+- Optional additional features could include login/auth functionality and stripe payments. 
+
+## Technologies Used
+
+- [Django 1.11](https://docs.djangoproject.com/en/2.1/releases/1.11/)
+
+- [Django REST Framework](https://www.django-rest-framework.org/)
+
+- [JQuery](https://jquery.com)
+
+- [Bootstrap 4](https://getbootstrap.com/)
+
+## Testing
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Deployment
 
-Happy coding!
-The Cloud9 IDE team
+
+
+
+## Credits
+
+### Content
+
+### Media
+
+### Acknowledgements
