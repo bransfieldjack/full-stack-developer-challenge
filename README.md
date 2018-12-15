@@ -40,19 +40,49 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 - [Bootstrap 4](https://getbootstrap.com/)
 
+- [Postman API Development](https://www.getpostman.com/)
+
 ## Testing
 
+CI/CD builds verified using Travis, .travis.yml file for integration with Travis and github. 
+CI/CD builds configured with Azure DevOps, 
 
+Postman was used for API functionality testing, along with the built in Django Api Root dashboard. 
+
+Tests executed using the following command:
+
+ - python3 manage.py test
+
+### Initial test:
+
+```
+from django.test import TestCase
+
+# Create your tests here.
+class TestDjango(TestCase):
+    
+    
+    def test_is_this_thing_on(self):
+        self.assertEqual(1, 0)
+```
+### View test:
+```
+from django.test import TestCase
+
+
+class TestViews(TestCase):
+    
+    
+    def test_get_home_page(self):
+        page = self.client.get("/")
+        self.assertEqual(page.status_code, 200)
+```
+
+![Azure Pipelines build successful](https://s3-ap-southeast-2.amazonaws.com/info-exchange-test/azure_pipelines_build_succeed.PNG)
+![Travis build successful](https://s3-ap-southeast-2.amazonaws.com/info-exchange-test/travis_build_succeed.PNG)
 
 ## Deployment
 
 
 
 
-## Credits
-
-### Content
-
-### Media
-
-### Acknowledgements
