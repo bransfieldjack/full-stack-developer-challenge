@@ -10,7 +10,7 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+### Apps:
  
  - Books app
  
