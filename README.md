@@ -42,6 +42,12 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 - [Postman API Development](https://www.getpostman.com/)
 
+- [Travis CI](https://travis-ci.org/)
+
+- [Azure DevOps](https://azure.microsoft.com/en-au/services/devops/)
+
+
+
 ## Testing
 
 CI/CD builds verified using Travis, .travis.yml file for integration with Travis and github. 
