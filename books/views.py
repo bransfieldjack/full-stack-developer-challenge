@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from .models import Books, Author
-from .serializers import BooksSerializer
+from .serializers import BooksSerializer, AuthorSerializer
 
 
 class BooksView(viewsets.ModelViewSet): # Inheriting the modelviewset will take care of PUT/GET functionality, no need to explicitly define. 
