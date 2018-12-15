@@ -36,7 +36,7 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
 
 - [Django REST Framework](https://www.django-rest-framework.org/)
 
-- [JQuery](https://jquery.com)
+- [React v16](https://reactjs.org/blog/2017/09/26/react-v16.0.html)
 
 - [Bootstrap 4](https://getbootstrap.com/)
 
