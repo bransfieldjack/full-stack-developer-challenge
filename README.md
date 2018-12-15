@@ -2,7 +2,7 @@
 
 ![Django Banner](https://s3-ap-southeast-2.amazonaws.com/info-exchange-test/django.jpeg)
 
-[![Build Status](https://travis-ci.org/bransfieldjack/full-stack-developer-challenge.svg?branch=master)
+![Build Status](https://travis-ci.org/bransfieldjack/full-stack-developer-challenge.svg?branch=master)
 
 This is a small web application to manage a list of Books, required as per the Infoexchange technical exam. 
 Each book has a name, ISBN, and an author. The test consists of two parts, a RESTful API as the backend and the Javascript based frontend application
