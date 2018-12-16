@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.urls import path, include
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
+from django.conf.urls import url
+from books.views import BooksView
+from rest_framework import routers
 
 
 urlpatterns = [
+    path('api', include('books.urls')), # Make sure to load the API first or else REACT wont access it. 
     path('admin/', admin.site.urls),
-    path('', include('books.urls')),
+    re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
