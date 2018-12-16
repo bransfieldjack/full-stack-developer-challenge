@@ -39,7 +39,7 @@ class App extends Component {
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                <h3> Name: </h3> {item.name} 
+                 <a href="#">{item.name}</a>
               </li>
               ))}
           </ul>
