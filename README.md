@@ -11,11 +11,6 @@ This app can be access from:
 
 [Info Exchange](https://info-exchange-app-jackalack117.c9users.io/)
 
-## UX
- 
-
-## Features
-
 ### Apps:
  
  - Books app
@@ -135,5 +130,4 @@ App configuration:
 - Run heroku config, from bash to verify the environment variables on the heroku environment. 
 - Go to the settings.py file and comment out the existing (local) database configuration strings. 
 - Dont forget to install env. 
-- 
- 
+
