@@ -14,7 +14,7 @@ export default class Authors extends React.Component {
   
   componentDidMount(){
     
-    fetch('http://info-exchange-app-jackalack117.c9users.io/apiauthor/')
+    fetch('https://info-exchange-app-jackalack117.c9users.io/apiauthor/')
       .then(res => res.json()) 
       .then(json => {
         this.setState({
