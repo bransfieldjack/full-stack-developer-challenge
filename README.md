@@ -7,6 +7,10 @@
 This is a small web application to manage a list of Books, required as per the Infoexchange technical exam. 
 Each book has a name, ISBN, and an author. The test consists of two parts, a RESTful API as the backend and the Javascript based frontend application
  
+This app can be access from: 
+
+![](https://info-exchange-app-jackalack117.c9users.io/)
+
 ## UX
  
 

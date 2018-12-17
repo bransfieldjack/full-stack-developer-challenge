@@ -27,7 +27,8 @@ SECRET_KEY = 'SECRET_KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['info-exchange-app.herokuapp.com']
+ALLOWED_HOSTS = ['info-exchange-app.herokuapp.com', 
+                 'info-exchange-app-jackalack117.c9users.io']
 
 
 # Application definition
