@@ -130,4 +130,6 @@ App configuration:
 - Run pip3 freeze --local > requirements.txt to update the requirements file for heroku. 
 - Run heroku config, from bash to verify the environment variables on the heroku environment. 
 - Go to the settings.py file and comment out the existing (local) database configuration strings. 
+- Dont forget to install env. 
 - 
+ 
