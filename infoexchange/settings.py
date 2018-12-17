@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -21,13 +22,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^9%j^kybjolf@xo!!_$b-4qvuh-2bezpntz^5*vq4tkpzujp65'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['os.environ.get("C9_HOSTNAME")',
-                 'os.environ.get("HOSTNAME")']
+ALLOWED_HOSTS = [os.environ.get("C9_HOSTNAME"),
+                 os.environ.get("HOSTNAME")]
 
 
 # Application definition
@@ -86,7 +87,7 @@ WSGI_APPLICATION = 'infoexchange.wsgi.application'
 #    }
 #}
 
-DATABASES = {'default': dj_database_url.parse('postgres://nbtdlnvbeoqepr:3ec516b802db5c30d70071f748ac9fab30b2f0324337b2f090f1dba22f32efa1@ec2-23-21-65-173.compute-1.amazonaws.com:5432/d2kgg9ki91vlcf')}
+DATABASES = {'default': dj_database_url.parse('DATABASE_URL')}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
