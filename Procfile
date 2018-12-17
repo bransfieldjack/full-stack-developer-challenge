@@ -1,1 +1,1 @@
-web: gunicorn info-exchange-app.wsgi:application
+web: gunicorn infoexchange.wsgi:application
