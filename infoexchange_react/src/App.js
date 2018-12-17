@@ -1,54 +1,33 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Books from  '../src/books.js';
+import Authors from  '../src/authors.js';
+import Add from '../src/add.js';
 
 
 class App extends Component {
   
-  constructor(props){
-    super(props);
-    this.state={
-      items: [],
-      isLoaded: false,
-    }
-  }
-  
-  componentDidMount(){
-    
-    fetch('https://info-exchange-app-jackalack117.c9users.io/apibooks/')
-      .then(res => res.json()) 
-      .then(json => {
-        this.setState({
-          isLoaded: true, 
-          items: json, 
-        })
-      });
-    
-  }
-  
   render() {
-    
-    var { isLoaded, items } = this.state;
-    
-    if(!isLoaded){
-      return <div>Loading... </div>;
-    }
-    
-    else{
       return (
-        <div className="App">
-        
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                 <a href="#">{item.name}</a>
-              </li>
-              ))}
-          </ul>
           
-        </div>
+          <Router>
+            <div className="App">
+              
+                      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href=""><Link to="/">Books</Link></a>
+                        <a class="navbar-brand" href=""><Link to="/about/">Authors</Link></a>
+                        <a class="navbar-brand" href=""><Link to="/users/">Add</Link></a>
+                      </nav>
+                      
+                      <Route path="/" exact component={Books} />
+                      <Route path="/about/" component={Authors} />
+                      <Route path="/users/" component={Add} />
+              
+            </div>
+          </Router>
         );
     }
     
   }
-}
 
 export default App;
