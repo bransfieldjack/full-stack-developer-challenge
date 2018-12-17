@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'infoexchange.wsgi.application'
 #    }
 #}
 
-DATABASES = {'default': dj_database_url.parse('DATABASE_URL')}
+DATABASES = {'default': dj_database_url.parse('postgres://nbtdlnvbeoqepr:3ec516b802db5c30d70071f748ac9fab30b2f0324337b2f090f1dba22f32efa1@ec2-23-21-65-173.compute-1.amazonaws.com:5432/d2kgg9ki91vlcf')}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
