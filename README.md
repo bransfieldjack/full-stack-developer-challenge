@@ -123,3 +123,11 @@ App configuration:
 - push changes to both the git and heroku repo's
 - update allowed hosts with the heroku url (https://info-exchange-app.herokuapp.com/)
 - 
+- Add the environment variables: os.environ.get('C9_HOSTNAME') & os.environ.get('HOSTNAME')
+- Add the heroku add-on for postgresql: heroku addons:create heroku-postgresql:hobby-dev
+- Install: sudo pip3 install psycopg2 (Driver for connecting to the postgresql database on heroku)
+- Install the following to connecto to the postgresql database on heroku: sudo pip3 install dj_database_url
+- Run pip3 freeze --local > requirements.txt to update the requirements file for heroku. 
+- Run heroku config, from bash to verify the environment variables on the heroku environment. 
+- Go to the settings.py file and comment out the existing (local) database configuration strings. 
+- 
