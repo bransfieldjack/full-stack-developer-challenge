@@ -9,7 +9,7 @@ Each book has a name, ISBN, and an author. The test consists of two parts, a RES
  
 This app can be access from: 
 
-![](https://info-exchange-app-jackalack117.c9users.io/)
+![info-exchange-app](https://info-exchange-app-jackalack117.c9users.io/)
 
 ## UX
  
