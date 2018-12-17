@@ -40,7 +40,7 @@ export default class Authors extends React.Component {
             <books><ul>
               {items.map(item => (
                 <li key={item.id}>
-                   <a href="#">{item.last_name}</a>
+                   <a href="#">{item.first_name} {item.last_name}</a>
                 </li>
                 ))}
             </ul></books>

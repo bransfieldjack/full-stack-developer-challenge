@@ -5,22 +5,24 @@ export default class Header extends React.Component {
     return (
       <form>
           <ul>
-          
+            <li>
               <label>
                 Book Title:
                 <input type="text" name="title" />
               </label>
-              
+            </li>
+            <li>
               <label>
                 ISBN:
                 <input type="text" name="isbn" />
               </label>
-              
+            </li>
+            <li>
               <label>
                 Author:
                 <input type="text" name="author" />
               </label>
-              
+            </li>  
             <input type="submit" value="Submit" />
             
           </ul>

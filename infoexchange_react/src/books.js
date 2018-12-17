@@ -1,5 +1,6 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import BookDetails from '../src/bookdetails.js';
 
 
 export default class Books extends React.Component {
@@ -33,20 +34,23 @@ export default class Books extends React.Component {
     }
     
     else{
-    return ( <div className="App">
-        
-            
-        
-            <books>
-            <ul>
-              {items.map(item => (
-                <li key={item.id}>
-                   <a href="#"><Link to="/">{item.name}</Link></a>
-                </li>
-                ))}
-            </ul></books>
-            
-          </div>
+    return ( 
+    
+          <Router>
+            <div className="App">
+  
+              <ul>
+                {items.map(item => (
+                  <li key={item.id}>
+                     <a href="#"><Link to="/bookdetails">{item.name}</Link></a>
+                  </li>
+                  ))}
+              </ul>
+              
+              <Route path="/bookdetails/:item.id" exact component={BookDetails} />
+              
+            </div>
+          </Router>
 
         );
   }
