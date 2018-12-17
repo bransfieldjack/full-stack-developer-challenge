@@ -119,3 +119,7 @@ App configuration:
 
 - heroku config:set DISABLE_COLLECTSTATIC=1 (This turns off the collection for any static files. )
 - echo web: gunicorn info-exchange-app.wsgi:application > Procfile (The procfile is the entry point for our app. We tell heroku that this will be a web app using the gunicorn server. )
+- commit changes
+- push changes to both the git and heroku repo's
+- update allowed hosts with the heroku url (https://info-exchange-app.herokuapp.com/)
+- 
