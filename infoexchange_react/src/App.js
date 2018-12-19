@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Books from  '../src/books.js';
 import Authors from  '../src/authors.js';
 import Add from '../src/add.js';
+import Api from '../src/api.js';
 
 
 class App extends Component {
@@ -17,11 +18,13 @@ class App extends Component {
                         <a class="navbar-brand" href=""><Link to="/">Books</Link></a>
                         <a class="navbar-brand" href=""><Link to="/about/">Authors</Link></a>
                         <a class="navbar-brand" href=""><Link to="/users/">Add</Link></a>
+                        <a class="navbar-brand" href=""><Link to="/api">Api</Link></a>
                       </nav>
                       
                       <Route path="/" exact component={Books} />
                       <Route path="/about/" component={Authors} />
                       <Route path="/users/" component={Add} />
+                      <Route path="/api" component={Api} />
               
             </div>
           </Router>

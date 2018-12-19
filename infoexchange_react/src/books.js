@@ -47,7 +47,7 @@ export default class Books extends React.Component {
                   ))}
               </ul>
               
-              <Route path="/bookdetails/:item.id" exact component={BookDetails} />
+              <Route path="/bookdetails" exact component={BookDetails} />
               
             </div>
           </Router>

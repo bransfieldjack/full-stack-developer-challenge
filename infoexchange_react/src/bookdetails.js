@@ -15,9 +15,7 @@ export default class BookDetails extends React.Component {
   
   componentDidMount(){
     
-    const { handle } = this.props.match.params
-    
-    fetch('https://info-exchange-app-jackalack117.c9users.io/apibooks/${handle}')
+    fetch('https://info-exchange-app-jackalack117.c9users.io/apibooks/')
       .then(res => res.json()) 
       .then(json => {
         this.setState({

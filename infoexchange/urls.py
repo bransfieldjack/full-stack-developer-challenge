@@ -23,7 +23,8 @@ from rest_framework import routers
 
 
 urlpatterns = [
+    re_path('.*', TemplateView.as_view(template_name='index.html')),
+    re_path('/', TemplateView.as_view(template_name='index.html')),
     path('api', include('books.urls')), # Make sure to load the API first or else REACT wont access it. 
     path('admin/', admin.site.urls),
-    re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
